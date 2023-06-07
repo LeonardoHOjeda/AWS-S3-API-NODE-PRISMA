@@ -11,8 +11,11 @@ Una vez que se cargue el archivo en el bucket, la API generará una URL de acces
 # Instalación del proyecto
 
 ## Descargar Repositorio
+### HTTPS
+`git clone https://github.com/LeonardoHOjeda/AWS-S3-API-NODE-PRISMA.git`
 
-`git clone git@gitlab.gobdigital.com:[url]`
+### Github CLI
+`gh repo clone LeonardoHOjeda/AWS-S3-API-NODE-PRISMA`
 
 ## Instalar dependencias de desarrollo
 
