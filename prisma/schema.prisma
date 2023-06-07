@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Archivo {
+  id            Int      @id @default(autoincrement())
+  uuid          String   @unique
+  nombreArchivo String   @map(name: "nombre_archivo")
+  awsKey        String   @map(name: "aws_key")
+  awsBucket     String   @map(name: "aws_bucket")
+  awsRegion     String   @map(name: "aws_region")
+  createdAt     DateTime @default(dbgenerated("NOW()")) @map(name: "created_at")
+
+  @@map("archivos")
+}

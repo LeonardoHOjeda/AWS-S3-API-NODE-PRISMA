@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2016",
+    
+    /* Modules */
+    "baseUrl": "./src",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@modules/*": ["modules/*"],
+      "@middlewares/*": ["middlewares/*"],
+    },
+
+    /* Emit */
+    "outDir": "./build",
+    "rootDir": "./src",
+    "sourceMap": true,
+
+    /* Interop Constraint*/
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
