@@ -1,1 +1,0 @@
-{"version":3,"file":"aws.routes.js","sourceRoot":"","sources":["../../../src/modules/Aws/aws.routes.ts"],"names":[],"mappings":";;;;;AAAA,2DAA2D;AAC3D,qCAAgC;AAChC,qDAA+C;AAC/C,oDAA2B;AAE3B,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAA;AAEvB,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAA;AAEvB,MAAM,CAAC,IAAI,CAAC,SAAS,EAAE,MAAM,CAAC,MAAM,CAAC,MAAM,CAAC,EAAE,6BAAY,CAAC,CAAA;AAE3D,kBAAe,MAAM,CAAA"}

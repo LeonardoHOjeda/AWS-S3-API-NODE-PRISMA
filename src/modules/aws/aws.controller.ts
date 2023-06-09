@@ -27,9 +27,9 @@ export const getSingleFileSignedUrl = async (req: Request, res: Response, _next:
 
 export const downloadSingleFile = async (req: Request, res: Response, _next: NextFunction): Promise<any> => {
   const fileName = req.params.fileName
-  await downloadFileFromS3Service(fileName)
+  const fileDownloadable = await downloadFileFromS3Service(fileName)
 
-  res.json({ message: 'Archivo descargado' })
+  res.json(fileDownloadable)
 }
 
 export const uploadFile = async (req: Request, res: Response, _next: NextFunction): Promise<any> => {

@@ -1,4 +1,10 @@
 {
+  "peacock.remoteColor": "#1857a4",
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "nuxt.isNuxtApp": false,
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#1f6fd0",
     "activityBar.background": "#1f6fd0",
@@ -21,9 +27,5 @@
     "titleBar.inactiveBackground": "#1857a499",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.remoteColor": "#1857a4",
-  "[prisma]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
+  "peacock.color": "#1857a4",
 }

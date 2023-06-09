@@ -11,13 +11,14 @@ datasource db {
 }
 
 model Archivo {
-  id            Int      @id @default(autoincrement())
-  uuid          String   @unique
-  nombreArchivo String   @map(name: "nombre_archivo")
-  awsKey        String   @map(name: "aws_key")
-  awsBucket     String   @map(name: "aws_bucket")
-  awsRegion     String   @map(name: "aws_region")
-  createdAt     DateTime @default(dbgenerated("NOW()")) @map(name: "created_at")
+  id               Int      @id @default(autoincrement())
+  uuid             String   @unique @default(uuid())
+  nombreArchivo    String   @unique @map(name: "nombre_archivo")
+  extensionArchivo String   @map(name: "extension_archivo")
+  awsKey           String   @map(name: "aws_key")
+  awsBucket        String   @map(name: "aws_bucket")
+  awsRegion        String   @map(name: "aws_region")
+  createdAt        DateTime @default(dbgenerated("NOW()")) @map(name: "created_at")
 
   @@map("archivos")
 }

@@ -19,6 +19,7 @@
     "@types/express-fileupload": "^1.4.1",
     "@types/module-alias": "2.0.1",
     "@types/node": "20.2.5",
+    "@types/uuid": "^9.0.2",
     "prettier-plugin-prisma": "^4.13.0",
     "prisma": "^4.15.0",
     "ts-standard": "12.0.2",
